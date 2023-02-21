@@ -5,27 +5,27 @@ import AntNetwork as AN
 
 homebase_coords = (
     [
-        (AN.BASEDIST * i + AN.BORDER + AN.BASESIZE / 2, AN.BORDER + AN.BASESIZE / 2)
+        (AN.BASEDIST * i + AN.BORDER + AN.BASESIZE // 2, AN.BORDER + AN.BASESIZE // 2)
         for i in range(5)
     ]
     + [
         (
-            AN.PLAYFIELDSIZE - AN.BORDER - AN.BASESIZE / 2,
-            AN.BASEDIST * (i + 1) + AN.BORDER + AN.BASESIZE / 2,
+            AN.PLAYFIELDSIZE - AN.BORDER - AN.BASESIZE // 2,
+            AN.BASEDIST * (i + 1) + AN.BORDER + AN.BASESIZE // 2,
         )
         for i in range(4)
     ]
     + [
         (
-            AN.BASEDIST * (3 - i) + AN.BORDER + AN.BASESIZE / 2,
-            AN.PLAYFIELDSIZE - AN.BORDER - AN.BASESIZE / 2,
+            AN.BASEDIST * (3 - i) + AN.BORDER + AN.BASESIZE // 2,
+            AN.PLAYFIELDSIZE - AN.BORDER - AN.BASESIZE // 2,
         )
         for i in range(4)
     ]
     + [
         (
-            AN.BORDER + AN.BASESIZE / 2,
-            AN.BASEDIST * (3 - i) + AN.BORDER + AN.BASESIZE / 2,
+            AN.BORDER + AN.BASESIZE // 2,
+            AN.BASEDIST * (3 - i) + AN.BORDER + AN.BASESIZE // 2,
         )
         for i in range(3)
     ]
