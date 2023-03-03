@@ -165,7 +165,7 @@ class AntServer(object):
         self.place_random_patches(INIT_PATCHES_SUGAR_CNT, INIT_PATCHES_SUGAR_SIZE, SUGAR)
         self.place_random_patches(INIT_PATCHES_TOXIN_CNT, INIT_PATCHES_TOXIN_SIZE, TOXIN)
         ### DEBUG!!!
-        self.place_entity_cube(100, 100, 2, TOXIN)
+        # self.place_entity_cube(100, 100, 2, TOXIN)
 
     def build_lookup(self):
         """this is a mapping from client id (ordering from bases, so, more like the base id)
